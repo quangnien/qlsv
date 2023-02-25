@@ -26,11 +26,10 @@ import lombok.Data;
 @Entity
 @Table(name = "giang_vien")
 @Data
-public class GiangVienEntity  implements Serializable {
+public class GiangVienEntity {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@PrimaryKey(generationType = PrimaryKey.GenerationType.SEQUENCE)
 	private Long id;
 	
 	@Column(name = "ma_gv", unique=true, columnDefinition = "varchar(20)")

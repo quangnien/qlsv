@@ -19,10 +19,9 @@ import lombok.Data;
 @Entity
 @Table(name = "diem", uniqueConstraints={@UniqueConstraint(columnNames = {"masv_id" , "maloptc_id"})})
 @Data
-public class DiemEntity  implements Serializable {
+public class DiemEntity {
 	
 	@Id
-	@PrimaryKey(generationType = PrimaryKey.GenerationType.SEQUENCE)
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	

@@ -21,10 +21,9 @@ import lombok.Data;
 @Entity
 @Table(name = "chi_tiet_lop_tc", uniqueConstraints={@UniqueConstraint(columnNames = {"maloptc_id" , "tiet", "thu"})})
 @Data
-public class ChiTietLopTcEntity  implements Serializable {
-	
+public class ChiTietLopTcEntity {
+
 	@Id
-	@PrimaryKey(generationType = PrimaryKey.GenerationType.SEQUENCE)
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 

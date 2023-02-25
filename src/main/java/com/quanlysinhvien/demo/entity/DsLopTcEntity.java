@@ -25,11 +25,10 @@ import lombok.Data;
 @Entity
 @Table(name = "ds_lop_tc")
 @Data
-public class DsLopTcEntity  implements Serializable {
-	
+public class DsLopTcEntity {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@PrimaryKey(generationType = PrimaryKey.GenerationType.SEQUENCE)
 	private Long id;
 	
 	@Column(name = "ma_lop_tc", unique = true, columnDefinition = "varchar(20)")

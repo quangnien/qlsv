@@ -21,11 +21,10 @@ import lombok.Data;
 @Entity
 @Table(name = "mon_hoc")
 @Data
-public class MonHocEntity  implements Serializable{
+public class MonHocEntity {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@PrimaryKey(generationType = PrimaryKey.GenerationType.SEQUENCE)
 	private Long id;
 	
 	@Column(name = "ma_mh", unique=true, columnDefinition = "varchar(20)")
